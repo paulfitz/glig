@@ -1,0 +1,21 @@
+body { 
+  background: gold;
+}
+
+h1 { 
+  font-size: 50px;
+  color: red;
+  text-align: center;
+  background: black;
+  padding: 10px;
+}
+
+p { 
+  font-size: 30pt; 
+  color: blue;
+}
+
+li { 
+  font-size: 30pt; 
+  color: green;
+}
