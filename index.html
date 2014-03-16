@@ -22,9 +22,9 @@ $(function() {
   var active = false;
   function clignote() {
     if (active) {
-      $(body).css('background': 'url(jupiter.png)');
+      $(body).css({'background': 'url(jupiter.png)'});
     } else {
-      $(body).css('background': 'red');
+      $(body).css({'background': 'red'});
     }
     active = !active;
     setTimeout(clignote,500);
