@@ -21,3 +21,8 @@ li {
   font-size: 30pt; 
   color: green;
 }
+
+p.fancy {
+  font-size: 50pt;
+  color: purple;
+}
