@@ -15,18 +15,21 @@
 Gligs are strong!!!  Gligs are on Jupiter.
 
 <br />
-<img src="glig.jpg" />
 
 <script>
 $(function() {
-  var active = false;
+  var active = 0;
   function clignote() {
-    if (active) {
+    if (active==0) {
       $('body').css({'background': 'url(jupiter.png)', 'background-repeat':'no-repeat', 'background-size':'100% 100%'});
-    } else {
+    }
+    if (active==1) {
       $('body').css({'background': 'red'});
     }
-    active = !active;
+    if (active==2) {
+      $('body').css({'background': 'url(glig.jpg)', 'background-repeat':'no-repeat', 'background-size':'100% 100%'});
+    }
+    active = (active+1)%3;
     setTimeout(clignote,2000);
   }
   clignote();
